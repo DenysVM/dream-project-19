@@ -1,11 +1,11 @@
 {
-  "name": "vanilla-app-template",
+  "name": "dream-project-19",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vanilla-app-template/",
+    "build": "vite build --base=/dream-project-19/",
     "preview": "vite preview"
   },
   "devDependencies": {
