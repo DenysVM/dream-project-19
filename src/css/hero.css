@@ -1,1 +1,58 @@
 /* Юрій Андрущенко  */
+.hero {
+    min-width: 290px;
+    background-color: var(--black-background, #141414);
+}
+.hero-container {
+    max-width: 375px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.container {
+}
+.hero-title {
+    font-size: 38px;
+    line-height: calc(40 / 38);
+    letter-spacing: -0.04em;
+    color: var(--white-background, #ffffff);
+    margin-bottom: 60px;
+}
+.swiper {    
+}
+.mySwyper {
+}
+.swiper-initialized {
+}
+.swiper-horizontal {
+}
+.swiper-backface-hidden {
+}
+.swiper-wrapper {
+    margin-bottom: 20px;
+}
+.swiper-slide {
+}
+.swiper-slide-active {
+}
+.swiper-slide-next {
+}
+.swiper-notification {
+}
+.swiper-btn {
+    margin-bottom: 40px;
+}
+.button-prev {
+}
+.button-next {
+}
+.text-container {
+    margin-left: auto;
+    margin-bottom: 40px;
+    width: 248px;
+}
+.hero-text {
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    letter-spacing: -0.02em;
+    color: var(--white-background, #ffffff);
+}
