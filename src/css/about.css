@@ -1,10 +1,44 @@
 /* Дарина Качалка */
 .about-container {
   max-width: 375px;
-  margin: 0 auto;
-  padding: 0 20px;
+  /* margin: 0 auto;
+  padding: 0 20px; */
 }
 
+.about-container-text {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 .about-text {
-  /* color: black; */
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  color: var(--black-background);
+
+  margin-bottom: 20px;
+}
+
+.about-text-right {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  color: var(--black-background);
+}
+
+.about-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: var(--dark-green-background);
+
+  margin-bottom: 40px;
+}
+
+.about-gif {
+  height: 365px;
+  width: 335px;
 }
