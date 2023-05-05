@@ -1,1 +1,198 @@
 /*  Наталія Ковшар */
+.container {
+  max-width: 335px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+section {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+/* ----------Portfolio-page----------------------- */
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 72px;
+}
+
+.catalog-item {
+  flex-basis: 100%;
+  position: relative;
+}
+
+.heart-icon {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  margin-bottom: 5px;
+  fill: #ffffff;
+  stroke: rgba(20, 20, 20, 0.1);
+}
+
+.catalog-item:nth-child(n + 11) {
+  display: none;
+}
+
+.catalog-title {
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: #1e2827;
+}
+
+.catalog-text {
+  margin-top: 14px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #141414;
+}
+
+.catalog-price-text {
+  margin-top: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: rgba(20, 20, 20, 0.5);
+}
+
+.catalog-btn {
+  margin-top: 40px;
+  display: block;
+  margin-left: auto;
+  min-width: 108px;
+  height: 42px;
+  background: #1e2827;
+  border-radius: 8px;
+  border: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  transition: border 250ms var(--timing-function);
+}
+
+.catalog-btn:hover,
+.catalog-btn:focus {
+  border: 1px solid #ffffff;
+}
+
+.catalog-thumb {
+  position: relative;
+
+  overflow: hidden;
+  padding: 43px 30px;
+}
+
+.overlay-title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.overlay-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.01em;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 10px;
+}
+.bottom-text {
+  margin-bottom: 0;
+}
+
+.catalog-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  padding: 40px;
+  background-color: #1e2827;
+  border-radius: 8px;
+  transform: translateX(-100%);
+  transition: transform 250ms var(--timing-function);
+}
+
+.catalog-link:hover .catalog-overlay,
+.catalog-link:focus .catalog-overlay {
+  transform: translate(0);
+}
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 335px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  section {
+    margin-top: 128px;
+    margin-bottom: 128px;
+  }
+
+  .catalog-list {
+    gap: 32px;
+    row-gap: 40px;
+  }
+  .catalog-item {
+    flex-basis: calc((100% - 32px) / 2);
+  }
+
+  .catalog-title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  .catalog-btn {
+    min-width: 122px;
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1176px;
+    padding-top: 80px;
+  }
+
+  section {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .catalog-list {
+    gap: 24px;
+    row-gap: 64px;
+  }
+
+  .catalog-item:nth-child(n + 9) {
+    display: block;
+  }
+
+  .catalog-item {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+  .catalog-btn {
+    margin-top: 80px;
+  }
+}
