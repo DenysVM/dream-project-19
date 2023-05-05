@@ -16,10 +16,7 @@
 @import url('./burger.css');
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  
 
   --black-background: #141414;
   --dark-green-background: #1e2827;
@@ -27,14 +24,6 @@
   --sale-text-color: rgba(20, 20, 20, 0.5);
   --cubic-besier: cubic-bezier(0.4, 0, 0.2, 1);
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
 }
 /* ------------------Плавна прокрутка при навігації------------------- */
 @media (prefers-reduced-motion: no-preference) {
@@ -45,7 +34,6 @@
 
 body {
   font-family: 'Epilogue', sans-serif;
-  font-weight: 300;
   font-size: 14px;
   line-height: calc(18 / 14);
 }
