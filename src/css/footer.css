@@ -17,6 +17,10 @@ footer {
   margin-bottom: 40px;
 }
 
+.contacts {
+  margin-bottom: 40px;
+}
+
 .contact-tel {
   display: block;
   margin-bottom: 20px;
@@ -28,7 +32,6 @@ footer {
 
 .contact-adr {
   display: block;
-  margin-bottom: 40px;
   font-size: 14px;
   line-height: 1.29;
   color: #ffffff;
