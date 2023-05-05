@@ -1,1 +1,10 @@
 /* Дарина Качалка */
+.about-container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-text {
+  /* color: black; */
+}
