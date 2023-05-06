@@ -1,6 +1,7 @@
 /* Тимур Кайум */
 
 .nwatch {
+    padding: 40px 0;
 }
 
 .container {
@@ -46,8 +47,8 @@
 
 @media screen and (min-width: 768px) {
     
-    .container {
-        max-width: 744px;
+    .nwatch {
+        padding: 64px 0;
     }
 
     .nwatch-title {
@@ -67,14 +68,14 @@
     }
     
     .nwatch-img-f {
-        width: 100%;
+        width: 342px;
         height: 260px;
     
         margin-bottom: 0;
     }
     
     .nwatch-img-s {
-        width: 100%;
+        width: 342px;
         height: 260px;
     }
 
@@ -82,10 +83,11 @@
 
 @media screen and (min-width: 1280px) {
 
-    .container {
-        max-width: 1216px;
+    .nwatch {
+        padding-bottom: 80px;
+        padding-top: 40px;
     }
-    
+
     .nwatch-img {
         display: flex;
         gap: 24px;
