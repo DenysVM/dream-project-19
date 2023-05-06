@@ -1,8 +1,5 @@
 /* Дарина Качалка */
 .about-container {
-  max-width: 767px;
-  /* margin: 0 auto;
-  padding: 0 20px; */
   margin-top: 40px;
   margin-bottom: 80px;
 }
@@ -42,12 +39,11 @@
 
 .about-gif {
   height: 365px;
-  min-width: 335px;
+  min-width: 324px;
 }
 
 @media screen and (min-width: 768px) {
   .about-container {
-    max-width: 1279px;
     margin-top: 64px;
     margin-bottom: 128px;
   }
@@ -73,7 +69,6 @@
 
 @media screen and (min-width: 1280px) {
   .about-container {
-    min-width: 1280px;
     margin-top: 80px;
     margin-bottom: 80px;
   }
