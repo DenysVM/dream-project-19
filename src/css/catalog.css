@@ -1,11 +1,9 @@
 /*  Наталія Ковшар */
-.container {
-  max-width: 335px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
+
+:root {
+  --cubic-besier: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 section {
   margin-top: 80px;
   margin-bottom: 80px;
@@ -17,7 +15,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  gap: 72px;
+  gap: 40px;
 }
 
 .catalog-item {
@@ -30,11 +28,16 @@ section {
   top: 14px;
   right: 14px;
   margin-bottom: 5px;
-  fill: #ffffff;
+  fill: var(--white-background, #ffffff);
   stroke: rgba(20, 20, 20, 0.1);
 }
 
-.catalog-item:nth-child(n + 11) {
+.heart-icon:hover,
+.heart-icon:focus {
+  fill: #ff2400;
+}
+
+.catalog-item:nth-child(n + 9) {
   display: none;
 }
 
@@ -44,25 +47,21 @@ section {
   font-size: 32px;
   line-height: 1.25;
   letter-spacing: -0.02em;
-  color: #1e2827;
+  color: var(--dark-green-background, #1e2827);
 }
 
 .catalog-text {
   margin-top: 14px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.29;
   letter-spacing: -0.02em;
-  color: #141414;
+  color: var(--black-background, #141414);
 }
 
 .catalog-price-text {
   margin-top: 4px;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: -0.02em;
-  color: rgba(20, 20, 20, 0.5);
+  color: var(--sale-text-color, rgba(20, 20, 20, 0.5));
 }
 
 .catalog-btn {
@@ -71,48 +70,26 @@ section {
   margin-left: auto;
   min-width: 108px;
   height: 42px;
-  background: #1e2827;
+  background: var(--dark-green-background, #1e2827);
   border-radius: 8px;
-  border: none;
-  font-weight: 400;
+  border: transparent;
   font-size: 12px;
   line-height: 1.17;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
-  transition: border 250ms var(--timing-function);
+  color: var(--white-background, #ffffff);
+  transition: border 250ms var(--cubic-besier);
 }
 
 .catalog-btn:hover,
 .catalog-btn:focus {
-  border: 1px solid #ffffff;
+  border: 1px solid var(--white-background, #ffffff);
 }
 
 .catalog-thumb {
   position: relative;
-
   overflow: hidden;
   padding: 43px 30px;
-}
-
-.overlay-title {
-  margin-bottom: 10px;
-  font-size: 14px;
-  line-height: 1.29;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-.overlay-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.29;
-  letter-spacing: -0.01em;
-  color: rgba(255, 255, 255, 0.5);
-  margin-bottom: 10px;
-}
-.bottom-text {
-  margin-bottom: 0;
 }
 
 .catalog-overlay {
@@ -123,10 +100,34 @@ section {
   height: 100%;
   margin-top: 0;
   padding: 40px;
-  background-color: #1e2827;
   border-radius: 8px;
-  transform: translateX(-100%);
-  transition: transform 250ms var(--timing-function);
+  background-color: var(--dark-green-background, #1e2827);
+  transform: translateY(100%);
+  transition: transform 250ms var(--cubic-besier);
+}
+
+.overlay-title {
+  margin-bottom: 10px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--white-background, #ffffff);
+}
+.overlay-text {
+  font-size: 12px;
+  line-height: 1.29;
+  letter-spacing: -0.01em;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 10px;
+}
+
+.overlay-list {
+  font-size: 11px;
+  letter-spacing: -0.01em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.catalog-link {
+  display: block;
 }
 
 .catalog-link:hover .catalog-overlay,
@@ -137,12 +138,17 @@ section {
   .container {
     max-width: 335px;
   }
+  .overlay-text {
+    font-size: 13px;
+  }
+
+  .overlay-list {
+    font-size: 12px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
+    max-width: 744px;
   }
   section {
     margin-top: 128px;
@@ -158,7 +164,6 @@ section {
   }
 
   .catalog-title {
-    font-weight: 600;
     font-size: 40px;
     line-height: 1.1;
   }
@@ -167,12 +172,26 @@ section {
     min-width: 122px;
     height: 50px;
   }
+
+  .catalog-overlay {
+    padding: 40px 60px 40px 40px;
+  }
+
+  .overlay-text {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  .overlay-list {
+    font-size: 14px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
   .container {
-    max-width: 1176px;
+    max-width: 1216px;
     padding-top: 80px;
+    padding-bottom: 44px;
   }
 
   section {
@@ -192,7 +211,29 @@ section {
   .catalog-item {
     flex-basis: calc((100% - 72px) / 4);
   }
+
+  .heart-icon {
+    top: 0px;
+    right: 0px;
+  }
+
+  .catalog-title {
+    margin-bottom: 64px;
+  }
+
+  .catalog-thumb {
+    padding: 25px 0;
+  }
   .catalog-btn {
     margin-top: 80px;
+  }
+
+  .catalog-overlay {
+    padding: 20px;
+  }
+
+  .overlay-text {
+    font-size: 14px;
+    margin-bottom: 20px;
   }
 }
