@@ -1,1 +1,194 @@
 /* Денис Муратов */
+footer {
+  min-width: 290px;
+  background-color: var(--dark-green-background);
+}
+
+.footer-container {
+  max-width: 375px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 0px;
+  margin-bottom: 40px;
+}
+
+.contacts {
+  margin-bottom: 40px;
+}
+
+.contact-tel {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.29;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.contact-adr {
+  display: block;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #ffffff;
+  text-transform: none;
+}
+
+.nav-wrap {
+  position: relative;
+}
+
+.nav-footer {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-li-footer {
+  display: flex;
+}
+
+.nav-li-footer:not(:last-child) {
+  display: flex;
+  margin-bottom: 14px;
+}
+
+nav a {
+  font-size: 14px;
+  line-height: 1.29;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+}
+
+.social-media ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.social-media li {
+  margin-right: 20px;
+}
+
+.social-media a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px;
+  gap: 8px;
+  isolation: isolate;
+
+  width: 40px;
+  height: 40px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.footer-social-icon {
+  fill: #f4f4fd;
+}
+
+.copy {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: #c6cdd1;
+  opacity: 0.9;
+  margin-bottom: 14px;
+}
+
+.privacy {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: #c6cdd1;
+}
+
+.privacy:not(:last-child) {
+  margin-right: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 768px;
+  }
+  .footer-container {
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+  }
+
+  .contact-tel {
+    width: 175px;
+    font-size: 18px;
+    line-height: 1.33;
+  }
+
+  .contact-adr {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+  .nav-wrap {
+    position: fixed;
+  }
+  .nav-footer {
+    position: fixed;
+    left: 50%;
+    top: auto;
+  }
+
+  nav a {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+
+  .social-media {
+    position: fixed;
+  }
+
+  .social-media ul {
+    position: fixed;
+    top: auto;
+    right: 0px;
+
+    margin-bottom: 0px;
+  }
+  /* .social-media ul:not(:last-child) {
+    margin-right: 20px;
+  } */
+
+  .copy {
+    font-size: 14px;
+    line-height: 1.29;
+    margin-bottom: 0px;
+  }
+
+  .privacy {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .line {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .privacy:not(:last-child) {
+    margin-right: 18px;
+  }
+}
