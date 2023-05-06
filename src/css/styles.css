@@ -16,34 +16,52 @@
 @import url('./burger.css');
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
   --black-background: #141414;
   --dark-green-background: #1e2827;
   --white-background: #ffffff;
   --sale-text-color: rgba(20, 20, 20, 0.5);
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  --cubic-besier: cubic-bezier(0.4, 0, 0.2, 1);
+  --backdrop-background: rgba(30, 40, 39, 0.7);
+  --input-outline: #e72604;
+  --privacy-text: rgba(20, 20, 20, 0.4);
+  --modal-box-shadow: 0px 0px 223px rgba(0, 0, 0, 0.05),
+    0px 0px 130.6px rgba(0, 0, 0, 0.037963),
+    0px 0px 71.0296px rgba(0, 0, 0, 0.0303704),
+    0px 0px 36.2375px rgba(0, 0, 0, 0.025),
+    0px 0px 18.1704px rgba(0, 0, 0, 0.0196296),
+    0px 0px 8.77546px rgba(0, 0, 0, 0.012037);
 }
+
+/* ------------------Плавна прокрутка при навігації------------------- */
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
 body {
   font-family: 'Epilogue', sans-serif;
   font-size: 14px;
   line-height: calc(18 / 14);
 }
 .container {
+  max-width: 364px;
+  margin: 0 auto;
+  padding: 0 20px;
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 744px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1216px;
+  }
 }

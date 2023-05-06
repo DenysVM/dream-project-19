@@ -22,10 +22,13 @@ ul {
 a {
   color: currentColor;
   text-decoration: none;
+  font-style: normal;
 }
 
 button {
   cursor: pointer;
+  border: none;
+  padding: 0;
 }
 
 img {
