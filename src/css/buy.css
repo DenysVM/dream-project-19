@@ -9,8 +9,8 @@
   height: 100%;
   background-color: var(--backdrop-background);
   opacity: 1;
-  transition: opacity 250ms var(--cubic-timing),
-    visibility 250ms var(--cubic-timing);
+  transition: opacity 250ms var(--cubic-besier),
+    visibility 250ms var(--cubic-besier);
 }
 .backdrop.is-hidden {
   pointer-events: none;
@@ -29,7 +29,7 @@
   background-color: var(--white-background);
   box-shadow: var(--modal-box-shadow);
   transform: scale(1);
-  transition: transform 250ms linear;
+  transition: transform 250ms var(--cubic-besier);
 }
 .backdrop.is-hidden .modal {
   transform: scale(0.5);
@@ -46,7 +46,7 @@
   align-items: center;
   border: none;
   background-color: transparent;
-  transition: transform 250ms linear;
+  transition: transform 250ms var(--cubic-besier);
 }
 .modal-close-button:hover,
 .modal-close-button:focus {
@@ -92,7 +92,7 @@
   outline-color: transparent;
   border: 1px solid var(--sale-text-color);
   border-radius: 8px;
-  transition: outline-color 250ms linear;
+  transition: outline-color 250ms var(--cubic-besier);
 }
 .modal-input::placeholder {
   letter-spacing: -0.02em;
@@ -121,7 +121,7 @@
   color: #ffffff;
   background-color: var(--dark-green-background);
   border-radius: 8px;
-  transition: background-color 250ms linear;
+  transition: background-color 250ms var(--cubic-besier);
 }
 .buy-submit-btn:hover,
 .buy-submit-btn:focus {
@@ -137,7 +137,7 @@
 }
 .privacy-link {
   text-decoration: underline;
-  transition: color 250ms linear;
+  transition: color 250ms var(--cubic-besier);
 }
 .privacy-link:hover,
 .privacy-link:focus {
@@ -154,10 +154,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: transform 250ms linear;
   }
   .backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0.5);
   }
   .modal-close-button {
     width: 24px;
