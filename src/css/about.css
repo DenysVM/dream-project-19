@@ -1,1 +1,87 @@
 /* Дарина Качалка */
+.about-container {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.about-container-text {
+  margin-bottom: 40px;
+}
+.about-text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  color: var(--black-background);
+
+  margin-bottom: 20px;
+}
+
+.about-text-right {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  color: var(--black-background);
+}
+
+.about-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: var(--dark-green-background);
+
+  margin-bottom: 40px;
+}
+
+.about-gif {
+  height: 365px;
+  min-width: 324px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-container {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .about-container-text {
+    display: flex;
+  }
+  .about-title {
+    min-width: 174px;
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+  .about-text {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .about-gif {
+    min-width: 704px;
+    height: 465px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-container {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  .about-title {
+    margin-right: 110px;
+  }
+  .about-container-text {
+    min-width: 859px;
+  }
+
+  .about-gif {
+    max-width: 892px;
+    height: 500px;
+    margin-left: auto;
+  }
+}
