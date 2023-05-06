@@ -1,35 +1,7 @@
 /* Sergii Sokolovskyi  */
-:root {
-  --cubic-besier: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  :root {
-    scroll-behavior: smooth;
-  }
-}
-
-a {
-  font-style: normal;
-}
-body {
-  font-weight: 300;
-  color: var(--white-background);
-}
-button {
-  border: none;
-  padding: 0;
-}
 
 .no-scroll {
   overflow: hidden;
-}
-
-/* --------------------------------------------- */
-.container {
-  max-width: 364px;
-  margin: 0 auto;
-  padding: 0 20px;
 }
 
 /* ---------------------------------HEADER-------------------------- */
@@ -54,6 +26,7 @@ button {
   line-height: 1;
   letter-spacing: -0.03em;
   padding: 34px 0;
+  color: var(--white-background, #ffffff);
 }
 
 .mob-page-logo {
@@ -157,7 +130,7 @@ button {
 
   letter-spacing: -0.02em;
   text-transform: uppercase;
-
+  color: var(--white-background, #ffffff);
   transition: color 250ms var(--cubic-besier);
 }
 
@@ -184,9 +157,6 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 744px;
-  }
   .menu-open-btn {
     display: none;
   }
@@ -226,11 +196,5 @@ button {
     line-height: 1.33;
 
     color: var(--white-background);
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1216px;
   }
 }
