@@ -64,12 +64,17 @@ nav ul {
   margin-bottom: 14px;
 }
 
-nav a {
+.nav-link-footer {
   font-size: 14px;
   line-height: 1.29;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-background);
   letter-spacing: -0.02em;
+  transition: color 250ms var(--cubic-besier);
+}
+
+.nav-link-footer:is(:hover, :focus) {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .social-media ul {
@@ -124,9 +129,6 @@ nav a {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    min-width: 768px;
-  }
   .footer-container {
     position: relative;
     max-width: 744px;
@@ -169,6 +171,11 @@ nav a {
     margin-right: 0px;
   }
 
+  .social-media a {
+    width: 44px;
+    height: 44px;
+  }
+
   .copy {
     font-size: 14px;
     line-height: 1.29;
@@ -187,5 +194,15 @@ nav a {
 
   .privacy:not(:last-child) {
     margin-right: 18px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer-container {
+    max-width: 1216px;
+    padding-top: 104px;
+    padding-bottom: 32px;
+  }
+  .social-media {
+    left: 86%;
   }
 }
