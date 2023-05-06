@@ -45,9 +45,23 @@ body {
   line-height: calc(18 / 14);
 }
 .container {
+  max-width: 364px;
+  margin: 0 auto;
+  padding: 0 20px;
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 744px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1216px;
+  }
 }
