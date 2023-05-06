@@ -5,6 +5,7 @@ footer {
 }
 
 .footer-container {
+  position: relative;
   max-width: 364px;
   padding-top: 40px;
   padding-bottom: 20px;
@@ -127,7 +128,8 @@ nav a {
     min-width: 768px;
   }
   .footer-container {
-    max-width: 768px;
+    position: relative;
+    max-width: 744px;
     display: flex;
     flex-direction: column;
     padding-top: 80px;
@@ -144,10 +146,7 @@ nav a {
     line-height: 1.33;
   }
   .nav-wrap {
-    position: fixed;
-  }
-  .nav-footer {
-    position: fixed;
+    position: absolute;
     left: 50%;
     top: auto;
   }
@@ -158,19 +157,17 @@ nav a {
   }
 
   .social-media {
-    position: fixed;
+    position: absolute;
+    left: 75%;
   }
 
   .social-media ul {
-    position: fixed;
-    top: auto;
-    right: 0px;
-
+    position: absolute;
     margin-bottom: 0px;
   }
-  /* .social-media ul:not(:last-child) {
-    margin-right: 20px;
-  } */
+  .social-media li:last-child {
+    margin-right: 0px;
+  }
 
   .copy {
     font-size: 14px;
