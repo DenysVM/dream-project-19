@@ -4,13 +4,6 @@
   overflow: hidden;
 }
 
-/* --------------------------------------------- */
-.container {
-  max-width: 364px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 /* ---------------------------------HEADER-------------------------- */
 .header {
   min-width: 290px;
@@ -164,9 +157,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 744px;
-  }
   .menu-open-btn {
     display: none;
   }
@@ -206,11 +196,5 @@
     line-height: 1.33;
 
     color: var(--white-background);
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1216px;
   }
 }
