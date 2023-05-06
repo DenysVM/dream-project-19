@@ -1,1 +1,76 @@
 <!-- Павло Листопад -->
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button data-modal-close class="modal-close-button" type="button">
+      <svg class="modal-close-icon" width="10" height="10">
+        <use href="../img/icons.svg#close-modal"></use>
+      </svg>
+    </button>
+    <div class="modal-card">
+      <div class="modal-card-img">
+        <img
+          srcset="../img/img-buy/modal-watch-2x.jpg 2x"
+          src="../img/img-buy/modal-watch.jpg"
+          alt="steel watch with black case"
+          width="276"
+          height="274"
+        />
+      </div>
+
+      <p class="modal-card-title">
+        Tube Watch S42 Date Steel With Black Case...
+      </p>
+      <span class="modal-watch-price">€395</span>
+    </div>
+    <form class="modal-form">
+      <label class="modal-lebel">
+        <span class="modal-text">Full name</span>
+        <input
+          class="modal-input"
+          type="text"
+          name="username"
+          placeholder="Enter your full name"
+          required
+          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+        />
+      </label>
+      <label class="modal-lebel">
+        <span class="modal-text">Email</span>
+        <input
+          class="modal-input"
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+        />
+      </label>
+      <label class="modal-lebel">
+        <span class="modal-text">Card number</span>
+        <input
+          class="modal-input"
+          type="tel"
+          name="card-number"
+          placeholder="Enter card"
+          required
+          pattern="[0-9\s]{13,19}"
+        />
+      </label>
+      <label class="modal-textarea-label">
+        <span class="modal-text">Comments</span>
+        <textarea
+          class="modal-input user-comment"
+          name="user-comment"
+          placeholder="Enter your text"
+        ></textarea>
+      </label>
+      <button class="buy-submit-btn" type="submit">submit</button>
+      <p class="privacy-text">
+        By clicking on “Submit” button, you agree to our
+        <span><a class="privacy-link" href="">Privacy Policy,</a></span> and
+        allow Promodo to use this information for marketing purposes.
+      </p>
+    </form>
+  </div>
+</div>
