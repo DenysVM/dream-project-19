@@ -1,14 +1,10 @@
 /* Юрій Андрущенко  */
-.hero {
-    min-width: 290px;
+.hero {    
     background-color: var(--black-background, #141414);
 }
 .hero-container {
-    max-width: 375px;
     padding-top: 40px;
     padding-bottom: 40px;
-}
-.container {
 }
 .hero-title {
     font-size: 38px;
@@ -17,7 +13,15 @@
     color: var(--white-background, #ffffff);
     margin-bottom: 60px;
 }
-.swiper {    
+.swiperswiper 
+.mySwyper 
+.swiper-initialized 
+.swiper-horizontal 
+.swiper-backface-hidden { 
+    margin-left: 0;
+    width: 266px;
+    height: 200px; 
+    background-color: var(--dark-green-background);  
 }
 .mySwyper {
 }
@@ -28,9 +32,11 @@
 .swiper-backface-hidden {
 }
 .swiper-wrapper {
+
     margin-bottom: 20px;
 }
 .swiper-slide {
+    width: 266px;
 }
 .swiper-slide-active {
 }
@@ -39,16 +45,25 @@
 .swiper-notification {
 }
 .swiper-btn {
-    margin-bottom: 40px;
+    display: flex;
+    gap: 12px;
 }
-.button-prev {
+.btn-prev {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;           
+    width: 32px;
+    height: 32px;
 }
-.button-next {
+.btn-next {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    width: 32px;
+    height: 32px;
 }
 .text-container {
     margin-left: auto;
     margin-bottom: 40px;
-    width: 248px;
+    max-width: 248px;
 }
 .hero-text {
     font-size: 14px;
