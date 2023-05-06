@@ -92,6 +92,7 @@ nav ul {
 .social-media a {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   padding: 8px;
   gap: 8px;
