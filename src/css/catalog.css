@@ -2,7 +2,7 @@
 img {
   width: 100%;
 }
-section {
+.catalog-section {
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -145,7 +145,7 @@ section {
   }
 }
 @media screen and (min-width: 768px) {
-  section {
+  .catalog-section {
     padding-top: 64px;
     padding-bottom: 64px;
   }
@@ -183,7 +183,7 @@ section {
 }
 
 @media screen and (min-width: 1280px) {
-  section {
+  .catalog-section {
     padding-top: 40px;
     padding-bottom: 80px;
   }
