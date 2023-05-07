@@ -1,8 +1,5 @@
 /*  Наталія Ковшар */
-img {
-  width: 100%;
-}
-section {
+.catalog-section {
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -89,7 +86,7 @@ section {
 .catalog-thumb {
   position: relative;
   overflow: hidden;
-  padding: 43px 30px;
+  /* padding: 43px 30px; */
 }
 
 .catalog-overlay {
@@ -145,7 +142,7 @@ section {
   }
 }
 @media screen and (min-width: 768px) {
-  section {
+  .catalog-section {
     padding-top: 64px;
     padding-bottom: 64px;
   }
@@ -183,7 +180,7 @@ section {
 }
 
 @media screen and (min-width: 1280px) {
-  section {
+  .catalog-section {
     padding-top: 40px;
     padding-bottom: 80px;
   }
