@@ -65,6 +65,25 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
+
+    <!-- Swiper script -->
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Swiper initialization -->
+    <script>
+      const swiper = new Swiper('.mySwyper', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        Keyboard: {
+          enabled: true,
+        },
+        navigation: {
+          nextEl: '.btn-next',
+          prevEl: '.btn-prev',
+        },
+      });
+    </script>
   </body>
 </html>
