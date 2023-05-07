@@ -1,24 +1,24 @@
 /* Денис Муратов */
 footer {
   min-width: 290px;
+  padding-top: 40px;
+  padding-bottom: 20px;
   background-color: var(--dark-green-background);
 }
 
 .footer-container {
   position: relative;
   max-width: 364px;
-  padding-top: 40px;
-  padding-bottom: 20px;
 }
 
 .logo {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   border-radius: 0px;
   margin-bottom: 40px;
 }
 
-.logo svg {
+.logo img {
   width: 40px;
   height: 40px;
 }
@@ -135,15 +135,23 @@ nav ul {
 }
 
 @media screen and (min-width: 768px) {
+  footer {
+    padding-top: 80px;
+  }
+
   .footer-container {
     position: relative;
     max-width: 744px;
     display: flex;
     flex-direction: column;
-    padding-top: 80px;
   }
 
-  .logo svg {
+  .logo {
+    height: 50px;
+    width: 50px;
+  }
+
+  .logo img {
     width: 50px;
     height: 50px;
   }
@@ -168,11 +176,6 @@ nav ul {
     font-size: 18px;
     line-height: 1.33;
   }
-
-  /* .social-media {
-    position: absolute;
-    left: 75%;
-  } */
 
   .social-media {
     position: absolute;
@@ -209,10 +212,13 @@ nav ul {
   }
 }
 @media screen and (min-width: 1280px) {
-  .footer-container {
-    max-width: 1216px;
+  footer {
     padding-top: 104px;
     padding-bottom: 32px;
+  }
+
+  .footer-container {
+    max-width: 1216px;
   }
   .social-media {
     right: 0px;
