@@ -24,12 +24,16 @@
     margin-bottom: 40px;
 }
 
-.nwatch-img {
-    
-}
 
 .nwatch-img-f {
     margin-bottom: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.nwatch-img-s {
+    width: 100%;
+    height: 100%;
 }
 
 @media screen and (min-width: 768px) {
