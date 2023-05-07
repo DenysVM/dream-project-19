@@ -27,6 +27,7 @@ section {
   right: 14px;
   margin-bottom: 5px;
   fill: rgba(20, 20, 20, 0.1);
+  transition: fill 250ms var(--cubic-besier);
 }
 
 .heart-icon:hover,
