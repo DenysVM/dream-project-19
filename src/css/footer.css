@@ -135,12 +135,15 @@ nav ul {
 }
 
 @media screen and (min-width: 768px) {
+  footer {
+    padding-top: 80px;
+  }
+
   .footer-container {
     position: relative;
     max-width: 744px;
     display: flex;
     flex-direction: column;
-    padding-top: 80px;
   }
 
   .logo {
@@ -209,10 +212,13 @@ nav ul {
   }
 }
 @media screen and (min-width: 1280px) {
-  .footer-container {
-    max-width: 1216px;
+  footer {
     padding-top: 104px;
     padding-bottom: 32px;
+  }
+
+  .footer-container {
+    max-width: 1216px;
   }
   .social-media {
     right: 0px;
