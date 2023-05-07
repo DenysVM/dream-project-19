@@ -1,11 +1,13 @@
 /*  Наталія Ковшар */
+/* ----------Catalog-section----------------------- */
 .catalog-section {
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-/* ----------Catalog-section----------------------- */
-
+.catalog-thumb > img {
+  width: 100%;
+}
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
@@ -86,7 +88,7 @@
 .catalog-thumb {
   position: relative;
   overflow: hidden;
-  /* padding: 43px 30px; */
+  padding: 43px 30px;
 }
 
 .catalog-overlay {
