@@ -1,14 +1,14 @@
 /* Денис Муратов */
 footer {
   min-width: 290px;
+  padding-top: 40px;
+  padding-bottom: 20px;
   background-color: var(--dark-green-background);
 }
 
 .footer-container {
   position: relative;
   max-width: 364px;
-  padding-top: 40px;
-  padding-bottom: 20px;
 }
 
 .logo {
