@@ -1,23 +1,20 @@
 /* Юрій Андрущенко  */
 
 .hero {
+    padding-top: 40px;
+    padding-bottom: 40px;
     background-color: var(--black-background, #141414);
 }
 
-.hero-container {
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
 @media screen and (min-width: 768px) {
-    .hero-container {
+    .hero {
         padding-top: 61px;
         padding-bottom: 64px;
     }
 }
 
 @media screen and (min-width: 1280px) {
-    .hero-container {
+    .hero {
         padding-bottom: 80px;
     }
 }
@@ -58,7 +55,6 @@
     margin-left: 0;
     margin-bottom: 20px;
     width: 266px;
-    height: 200px;
 }
 
 @media screen and (min-width: 768px) {
@@ -66,9 +62,9 @@
         margin-left: 0;
         margin-bottom: 20px;
         width: 436px;
-        height: 255px;
     }
 }
+
 
 .swiper-btn {
     margin-bottom: 40px;
