@@ -50,11 +50,20 @@
 
     }
 }
+.swiper-main {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
 
-.swiper.mySwyper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+.swiper-pagination {
     margin-left: 0;
-    margin-bottom: 20px;
-    width: 266px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 74px;
 }
 
 @media screen and (min-width: 768px) {
@@ -65,9 +74,11 @@
     }
 }
 
-
-.swiper-btn {
-    margin-bottom: 40px;
+.swiper-main {
+    margin-top: 20px;
+    display: flex;
+}
+.swiper-btn {    
     display: flex;
     gap: 12px;
 }
@@ -92,7 +103,29 @@
 .swiper-btn .hero-btn:is(:hover, :focus) {
     fill: var(--white-background);
 }
-
+/* .pagination-manage {
+    width: 74px;
+} */
+.number {
+    position: relative;    
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    letter-spacing: -0.02em;
+    color: var(--white-background);
+}
+.swiper-pagination > .number-of-slides::after {
+    position: absolute;
+    content: "";
+    width: 32px;
+    border: 1px solid var(--white-background);
+    display: block;
+    background-color: currentColor;
+    left: 20px;
+    bottom: 9px;
+}
+.dash {
+    margin-left: 40px;
+}
 .text-container {
     margin-left: auto;
     margin-bottom: 40px;
