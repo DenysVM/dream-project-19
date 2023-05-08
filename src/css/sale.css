@@ -173,6 +173,9 @@ body {
 
 /* ===============Desctop===============*/
 @media screen and (min-width: 1280px) {
+  .sale-section {
+    padding: 80px 132px 160px;
+  }
   .galery-conteiner {
     width: 981px;
     flex-wrap: nowrap;
