@@ -1,5 +1,5 @@
 /* Денис Муратов */
-footer {
+.footer {
   min-width: 290px;
   padding-top: 40px;
   padding-bottom: 20px;
@@ -135,7 +135,7 @@ nav ul {
 }
 
 @media screen and (min-width: 768px) {
-  footer {
+  .footer {
     padding-top: 80px;
   }
 
@@ -212,7 +212,7 @@ nav ul {
   }
 }
 @media screen and (min-width: 1280px) {
-  footer {
+  .footer {
     padding-top: 104px;
     padding-bottom: 32px;
   }
