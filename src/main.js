@@ -54,13 +54,30 @@
   }
 })();
 
-// // встановлюємо контекст імпортування для папки js та її піддиректорій
-// const requireModule = require.context('./js', true, /\.js$/)
+setup/main-optimization
 
-// // імпортуємо всі файли з папки та її піддиректорій
-// requireModule.keys().forEach(fileName => {
-//   // імпортуємо файл
-//   const importedModule = requireModule(fileName)
-//   // додаємо його до поточного модуля
-//   importedModule.default()
-// })
+      const swiper = new Swiper('.mySwyper', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        Keyboard: {
+          enabled: true,
+        },
+        navigation: {
+          nextEl: '.btn-next',
+          prevEl: '.btn-prev',
+        },
+      });
+    
+
+// встановлюємо контекст імпортування для папки js та її піддиректорій
+const requireModule = require.context('./js', true, /\.js$/)
+
+// імпортуємо всі файли з папки та її піддиректорій
+requireModule.keys().forEach(fileName => {
+// імпортуємо файл
+const importedModule = requireModule(fileName)
+// додаємо його до поточного модуля
+importedModule.default()
+})
+main
