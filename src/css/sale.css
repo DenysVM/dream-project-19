@@ -1,4 +1,5 @@
 /* Іван Кривошея */
+
 body {
   color: #141414;
 }
@@ -18,7 +19,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   column-gap: 20px;
-  width: 335px;
+  max-width: 335px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -37,8 +38,11 @@ body {
 .small-img {
   width: 100%;
 }
+.big-img-thumb {
+  max-width: 235px;
+  max-height: 350px;
+}
 .big-img {
-  background-color: black;
   width: 235px;
   height: 350px;
 }
@@ -153,13 +157,17 @@ body {
     padding: 128px 32px;
   }
   .galery-conteiner {
-    width: 572px;
+    max-width: 572px;
   }
   .img-list {
     max-width: 146px;
   }
   .small-img {
     width: 100%;
+  }
+  .big-img-thumb {
+    max-width: 406px;
+    max-height: 614px;
   }
   .big-img {
     width: 406px;
@@ -177,12 +185,17 @@ body {
     padding: 80px 132px 160px;
   }
   .galery-conteiner {
-    width: 981px;
+    max-width: 981px;
     flex-wrap: nowrap;
   }
   .watch-description-conteiner {
     width: 369px;
     margin-top: 0;
     margin-left: 20px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .galery-img-container {
+    flex-wrap: nowrap;
   }
 }
