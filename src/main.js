@@ -54,18 +54,28 @@
   }
 })();
 
-      const swiper = new Swiper('.mySwyper', {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        loop: true,
-        Keyboard: {
-          enabled: true,
-        },
-        navigation: {
-          nextEl: '.btn-next',
-          prevEl: '.btn-prev',
-        },
-      });
+      const swiper = new Swiper(".swiper", {
+  navigation: {
+    nextEl: '.btn-next',
+    prevEl: '.btn-prev',
+  },
+  slidesPerView: 1,
+  speed: 1000,
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    pageUpDown: true,
+  },
+  on: {
+    slideChange() {
+      let ollSliders = this.slides.length,
+        slIndex = this.realIndex + 1,
+        numIndex = (slIndex <= 9) ? '0' : '',
+        numOll = (ollSliders <= 9) ? '0' : '';
+      this.el.parentNode.querySelector(".number-of-slides").innerHTML = numIndex.toString() + slIndex.toString();
+    }
+  }
+});
     
 
 // встановлюємо контекст імпортування для папки js та її піддиректорій
