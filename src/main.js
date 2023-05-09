@@ -54,8 +54,6 @@
   }
 })();
 
-setup/main-optimization
-
       const swiper = new Swiper('.mySwyper', {
         slidesPerView: 1,
         spaceBetween: 10,
@@ -80,4 +78,4 @@ const importedModule = requireModule(fileName)
 // додаємо його до поточного модуля
 importedModule.default()
 })
-main
+
