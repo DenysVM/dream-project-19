@@ -4,7 +4,8 @@ const swiper = new Swiper(".swiper", {
     prevEl: '.btn-prev',
   },
   slidesPerView: 1,
-  speed: 1000,
+  speed: 700,
+  loop: true,
   keyboard: {
     enabled: true,
     onlyInViewport: true,

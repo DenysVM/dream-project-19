@@ -60,7 +60,8 @@
     prevEl: '.btn-prev',
   },
   slidesPerView: 1,
-  speed: 1000,
+  speed: 500,
+  loop: true,
   keyboard: {
     enabled: true,
     onlyInViewport: true,
