@@ -102,7 +102,7 @@
   border-radius: 8px;
   background-color: var(--dark-green-background, #1e2827);
   transform: translateX(-100%);
-  transition: transform 250ms var(--cubic-besier);
+  transition: transform 500ms var(--cubic-besier);
 }
 
 .overlay-title {
