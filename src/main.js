@@ -25,6 +25,17 @@
     openMenuBtn.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
   });
+
+  // Add event listener for all anchor links on the page
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', event => {
+      // Check if the mobile menu is open
+      if (mobileMenu.classList.contains('is-open')) {
+        // Close the mobile menu
+        toggleMenu();
+      }
+    });
+  });
 })();
 
 (() => {
@@ -39,9 +50,11 @@
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
+    document.body.classList.toggle('no-scroll');
   }
 })();
 
+setup/main-optimization
 
       const swiper = new Swiper('.mySwyper', {
         slidesPerView: 1,
@@ -56,3 +69,15 @@
         },
       });
     
+
+// встановлюємо контекст імпортування для папки js та її піддиректорій
+const requireModule = require.context('./js', true, /\.js$/)
+
+// імпортуємо всі файли з папки та її піддиректорій
+requireModule.keys().forEach(fileName => {
+// імпортуємо файл
+const importedModule = requireModule(fileName)
+// додаємо його до поточного модуля
+importedModule.default()
+})
+main
