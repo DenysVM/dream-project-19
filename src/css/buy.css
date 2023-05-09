@@ -27,6 +27,7 @@
   overflow: auto;
   max-width: 335px;
   width: 100%;
+  height: min-content;
   padding: 20px;
   z-index: 3;
   background-color: var(--white-background);
