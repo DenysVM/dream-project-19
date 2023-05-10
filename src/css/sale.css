@@ -188,6 +188,9 @@ body {
     max-width: 981px;
     flex-wrap: nowrap;
   }
+  .galery-img-container {
+    flex-wrap: nowrap;
+  }
   .watch-description-conteiner {
     width: 369px;
     margin-top: 0;
