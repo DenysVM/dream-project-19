@@ -34,6 +34,11 @@
   line-height: 1.29;
   text-transform: uppercase;
   color: #ffffff;
+  transition: color 250ms var(--cubic-besier);
+}
+
+.contact-tel:is(:hover, :focus) {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .contact-adr {
@@ -42,6 +47,11 @@
   line-height: 1.29;
   color: #ffffff;
   text-transform: none;
+  transition: color 250ms var(--cubic-besier);
+}
+
+.contact-adr:is(:hover, :focus) {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .nav-wrap {
@@ -109,10 +119,36 @@ nav ul {
 
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
+
+  transition: border-color 250ms var(--cubic-besier),
+    background-color 250ms var(--cubic-besier);
 }
 
 .footer-social-icon {
   fill: #f4f4fd;
+  transition: fill 250ms var(--cubic-besier);
+}
+
+.footer-social-icon {
+  fill: #f4f4fd;
+  transition: fill 250ms var(--cubic-besier);
+}
+
+.footer-social-icon.facebook:is(:hover, :focus) {
+  fill: #3b5998;
+}
+
+.footer-social-icon.instagram:is(:hover, :focus) {
+  fill: orangered;
+}
+
+.footer-social-icon.youtube:is(:hover, :focus) {
+  fill: #c4302b;
+}
+
+.social-media a:is(:hover, :focus) {
+  border-color: rgb(255, 255, 255, 0.6);
+  background-color: var(--black-background);
 }
 
 .copy {
@@ -129,10 +165,15 @@ nav ul {
   line-height: 1.17;
   letter-spacing: -0.02em;
   color: #c6cdd1;
+  transition: color 250ms var(--cubic-besier);
 }
 
 .privacy:not(:last-child) {
   margin-right: 14px;
+}
+
+.privacy:is(:hover, :focus) {
+  color: rgb(255, 255, 255, 0.9);
 }
 
 @media screen and (min-width: 768px) {
