@@ -192,12 +192,13 @@ nav ul {
   }
 
   .contact-tel {
-    width: 175px;
+    width: 180px;
     font-size: 18px;
     line-height: 1.33;
   }
 
   .contact-adr {
+    width: 180px;
     font-size: 18px;
     line-height: 1.33;
   }
