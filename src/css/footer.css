@@ -123,7 +123,7 @@ nav ul {
   border-radius: 10px;
 
   transition: border-color 250ms var(--cubic-besier),
-    background-color 250ms var(--cubic-besier);
+    background-color 250ms var(--cubic-besier), fill 250ms var(--cubic-besier);
 }
 
 .footer-social-link.facebook:is(:hover, :focus) {
